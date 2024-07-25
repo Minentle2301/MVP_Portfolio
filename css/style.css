@@ -13,9 +13,9 @@
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --clr-light: #fff;
+    --clr-light: white;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: #717f24;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -34,8 +34,6 @@
         --fs-body: 1.125rem;
     }
 }
-
-/* General styles */
 
 body {
     background: var(--clr-light);
@@ -137,6 +135,7 @@ header {
 
 .logo {
     max-width: 100px;
+    border-radius:150% ;
 }
 
 .nav {
@@ -397,6 +396,7 @@ header {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
+        object-fit: cover;
 }
 
 .portfolio__item:focus {
